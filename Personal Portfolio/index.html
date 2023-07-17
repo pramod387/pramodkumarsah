@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemobile.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        jQuery(function ($) {
+            var $navbar = $('.header');
+            $(window).scroll(function (event) {
+                var $current = $(this).scrollTop();
+                if ($current > 0) {
+                    $navbar.addClass('navbar-color');
+                } else {
+                    $navbar.removeClass('navbar-color')
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container" id="menu-header">
+            <nav id="nav">
+                <h1 class="logo">Portfolio</h1>
+                
+                    <input type="checkbox" id="click">
+                    <label for="click" class="menu-btn">
+                        <i class="fas fa-bars"></i>
+
+                    </label>
+                
+                <ul id="sidemenu">
+                    <li><a href="#menu-header">Home</a></li>
+                    <li><a href="#menu-about">About Me</a></li>
+                    <li><a href="#menu-skills">Skills</a></li>
+                    <li><a href="#menu-myproject">My Projects</a></li>
+                    <li><a href="#menu-education">Education</a></li>
+                    <li><a href="#menu-contact">Contact</a></li>
+
+                    <!-- <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i> -->
+                </ul>
+
+                <!-- <i class="fa-solid fa-bars fas" onclick="(openmenu)"></i> -->
+            </nav>
+            <div class="header-text-img">
+                <div class="header-text">
+                    <p class="header-text-p">Hello,my name is </p>
+                    <h2 class="header-text-h2">Pramod Kumar</h2>
+                    <h1 class="header-text-h1">
+                        And I'm pursing <span>Engineering</span> from<br> ECE branch.
+                        I live in Jharkhand</h1>
+                    <div>
+                        <a href="#menu-about">Know More About Me</a>
+                    </div>
+                </div>
+                <!-- <div>
+                <img src="image.jpg" alt="Skills" class="logo1">
+            </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Start About section -->
+    <section id="menu-about">
+        <div class="pagebreak-about" id="pagebreak-about-h1">
+            <h1 class="mobile-600"><a href="#">About me</a></h1>
+            <p class="mobile-600-p">who am i</p>
+        </div>
+        <div id="about">
+            <div class="about-container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="mypic.jpg" alt="My Pic">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-titles">I'm a programmer</h1>
+
+                        <p>Jay Hind Bhai Log!
+                            My name is Pramod Kumar sah and I am from Bhawnathpur Garhwa Jharkhand 822112,I'm
+                            pursing
+                            b.tech
+                            in ece from UCET VBU Hazaribag. Here you get free study resources, so that you can
+                            develop
+                            your
+                            skills better and if you are doing technical or non-technical degree then handwritten
+                            notes
+                            (PDF) are also shared for your semesters exam on this platform,which you can download
+                            easily.
+                        </p>
+                        <div>
+                            <a href="#">Download Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Start Skills Section -->
+    <section id="menu-skills">
+        <div class="pagebreak-skills">
+            <h1 class="mobile-600" id="pagebreak-skills-h1"><a href="#">My skills</a></h1>
+            <p class="mobile-600-p" id="pagebreak-skills-p">what i know</p>
+        </div>
+        <div class="skills">
+            <div class="skills-items">
+                <div class="skills-items-key-1">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-star"><span id="span">HTML</span></i>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-star"><span id="span">CSS</span></i>
+
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-star"><span id="span">Bootstrap</span></i>
+                    </div>
+
+                </div>
+                <div class="skills-items-key-1">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-star"><span id="span">JavaScript</span></i>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-star"><span id="span">PSD to HTML </span></i>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-star"><span id="span">Video Editing</span></i>
+                    </div>
+                </div>
+                <div class="skills-items-key-1">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-star"><span id="span">Canva</span></i>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-star"><span id="span">Wordpress</span></i>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-star"><span id="span">Teaching</span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start Experience / Projects Section -->
+    <section id="menu-myproject">
+        <div class="pagebreak-myprojects ">
+            <h1 class="mobile-600" id="pagebreak-myprojects-h1 "><a href="#">My Projects</a></h1>
+            <p class="mobile-600-p" id="pagebreak-myprojects-p">i have work on</p>
+        </div>
+        <div class="myprojects">
+            <div class="project project1">
+                <img src="project1.png" alt="Project1">
+                <div class="project-topic">
+                    <h3>Educational Website</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, magnam modi ducimus
+                        aliquid,
+                        laudantium repudiandae pariatur iure unde quod</p>
+                    <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="project project2">
+                <img src="project02.png" alt="Project2">
+                <div class="project-topic">
+                    <h3>Landing Page</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, magnam modi ducimus
+                        aliquid,
+                        laudantium repudiandae pariatur iure unde quod</p>
+                    <a href="https://studypoints.netlify.app/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+            <div class="project project3">
+                <img src="project03.png" alt="Project3">
+                <div class="project-topic">
+                    <h3>Temperature Converter</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, magnam modi ducimus
+                        aliquid,
+                        laudantium repudiandae pariatur iure unde quod</p>
+                    <a href="https://temppconverter.netlify.app/"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start Educational Qualification Details section -->
+    <section id="menu-education">
+        <div class="my-education-details pagebreak-myprojects ">
+            <h1 class="mobile-600" id="myeducation-h1"><a href="#">Educational Qualification</a></h1>
+            <p class="mobile-600-p" id="myeducation-p">my education details</p>
+        </div>
+        <div class="myeducation">
+            <div class="education college">
+                <h2>College</h2>
+                <p>University College Of Engineering And Technology (UCET) VBU</p>
+                <div class="education-data">
+                    <i class="fa-solid fa-location-arrow"><span>Stream:ECE</span></i>
+                    <i class="fa-solid fa-location-arrow"><span>Passing Year:2024</span></i>
+                    <i class="fa-solid fa-location-arrow"><span>Current:In 3rd Year</span></i>
+                    <i class="fa-solid fa-location-arrow"><span>SCGPA:8.23/10</span></i>
+                </div>
+            </div>
+            <div class="education intermediate">
+                <h2>Standard XII</h2>
+                <p>R.K +2 High School Bhawnathpur <br>(Jharkhand)</p>
+                <div class="education-data">
+                    <i class="fa-solid fa-location-arrow"><span>Stream:Science</span></i>
+                    <i class="fa-solid fa-location-arrow"><span>Board:JAC Board</span></i>
+                    <i class="fa-solid fa-location-arrow"><span>Passing Year:2020</span></i>
+                    <i class="fa-solid fa-location-arrow"><span>Percentage : 77.40%</span></i>
+                </div>
+            </div>
+            <div class="education school">
+                <h2>Standard X</h2>
+                <p>High School Kharoundhi<br>(Jharkhand)</p>
+                <div class="education-data">
+                    <i class="fa-solid fa-location-arrow"><span>Board:JAC Board</span></i>
+                    <i class="fa-solid fa-location-arrow"><span>Passing Year:2018</span></i>
+                    <i class="fa-solid fa-location-arrow"><span>Percentage : 70.80%</span></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start contact section -->
+    <section id="menu-contact">
+        <div class="pagebreak-contact pagebreak-myprojects">
+            <h1 class="mobile-600" id="pagebreak-contact-h1"><a href="#">Contact Us</a></h1>
+            <p class="mobile-600-p" id="pagebreak-contact-p">get in touch</p>
+        </div>
+
+        <!-- start Message me form/contact us /footer-menu section -->
+        <div class="footer">
+            <div class="footer-contact footer-content">
+                <h1 class="footer-h1" id="footer-h1">Message me</h1>
+                <form name="submit-to-google-sheet">
+                    <div>
+                        <input type="text" id="footer-name" name="name" placeholder="Enter Your Name*">
+                    </div>
+                    <div>
+                        <input type="email" id="footer-email" name="email" placeholder="Enter Your Email*" required>
+                    </div>
+                    <div>
+                        <textarea id="footer-messege" name="messege" placeholder="Enter Your Messege*"></textarea>
+                    </div>
+                    <div id="submit">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+
+            <div class="footer-address footer-content card">
+                <h1 id="footer-h1">
+                    Contact us
+                </h1>
+                <div class="footer-contact-list">
+                    <ul>
+                        <li>
+                            <a href="mailto:itspramodsupport@gmail.com" target="_blank" class="anchor"><i
+                                    class="fa-solid fa-envelope "
+                                    arget="_blank">&nbsp;&nbsp;&nbsp;<strong>itspramodsupport@gmail.com</strong></i></a>
+                        </li>
+                        <li>
+                            <a href="tel:+98524221" arget="_blank"><i
+                                    class="fa-solid fa-phone  ">&nbsp;&nbsp;&nbsp;<strong>+988452245</strong></i></a>
+                        </li>
+                        <li>
+                            <a href="https://goo.gl/maps/WcETEPxzhdZ2DiM6A" arget="_blank"><i
+                                    class="fa-solid fa-location-dot ">
+                                    &nbsp;&nbsp;&nbsp;<strong id="add">xyz 0000000</strong></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-menu  footer-content ">
+                <h1 id="footer-h1">
+                    Footer-Menu
+                </h1>
+                <div class="footer-menu-main">
+                    <div class="footer-menu-1">
+                        <ul>
+
+                            <li><a href="#menu-header">Home</a></li>
+                            <li><a href="#menu-about">About Me</a></li>
+                            <li><a href="#menu-skills">Skills</a></li>
+                            <li><a href="#menu-myproject">My Projects</a></li>
+                            <li><a href="#menu-contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-2">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/itspramod387/">Linkedin</a></li>
+                            <li><a href="https://github.com/pramod387">Github</a></li>
+                            <li><a href="https://twitter.com/PramodK61843089">Twitter</a></li>
+                            <li><a href="https://www.youtube.com/@ITSPRAMOD">Youtube</a></li>
+                            <li><a href="https://www.instagram.com/prmod.in/">Instagram</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- start footer -->
+    <footer>
+        <div class="copyright">
+            <p>Copyright &copy; 2023 ITS PRAMOD, All Rights Reserved.Designed by Pramod Kumar Sah</p>
+        </div>
+    </footer>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function openmenu() {
+            sidemenu.style.right = "200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwX2e7vreurIW1uJA5v-AYIHZhXWLnwQJIX-WreKx1dgLkDjuq_HxmaxetM-_oH21BEUQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+</body>
+
+</html>
